@@ -1,0 +1,36 @@
+1 - user table
+2 - role table
+relationship : many to many role and user
+
+3 - store table,
+relationship : one user can have many store
+
+4 - warehouse table,
+relationship : one store can have many warehouse
+
+5 - customer table,
+
+6 - supplier table,
+relationship : one supplier can supply many product
+
+7 - category table,
+
+8 - product table,
+relationship : many to many product and product_category
+relationship : many to one supplier and product
+
+9 - order table,
+relationship : one customer can have many orders
+relationship : one store can have many orders
+relationship : one warehouse can have many orders
+relationship : one order can have one invoice
+
+10 - order_item table,
+relationship : one order can have many order_item
+relationship : one product can be used in many order_item
+
+11 - invoice table,
+relationship : one invoice can be under one order
+relationship : one invoice can have many payments
+
+12 - payments table,
